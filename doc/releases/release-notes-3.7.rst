@@ -93,6 +93,8 @@ https://docs.zephyrproject.org/latest/security/vulnerabilities.html
 
 * CVE-2024-6135: Under embargo until 2024-09-11
 
+* CVE-2024-6258: Under embargo until 2024-09-05
+
 * CVE-2024-6259: Under embargo until 2024-09-12
 
 * CVE-2024-6442: Under embargo until 2024-09-22
@@ -389,6 +391,10 @@ Drivers and Sensors
 * ADC
 
   * Added support for STM32H7R/S series.
+
+  * Changed phandle type DT property ``nxp,reference-supply`` to phandle-array type DT property
+    ``nxp,references`` in ``nxp,lpc-lpadc`` binding. The NXP LPADC driver now supports passing
+    the reference voltage value by using ``nxp,references``.
 
 * Auxiliary Display
 
